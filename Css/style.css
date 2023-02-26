@@ -11,6 +11,7 @@
   background-color: #ccc;
   margin: 5px;
   display: inline-block;
+  position: relative;
   cursor: pointer;
 }
 .card img {
@@ -18,6 +19,17 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  position: absolute;
+  z-index: 1;
+}
+.card .cover {
+  width: 20vh;
+  height: 30vh;
+  background-image: url("../Assets/Cover.jpeg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 10;
 }
 
 .hidden {
@@ -30,7 +42,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #2c2c2c;
   margin-bottom: 5px;
   width: 100%;
 }
@@ -44,10 +56,15 @@ header .content {
   font-size: 20px;
 }
 header .content button {
-  border: 2px black solid;
+  border: 2px #2c2c2c solid;
   background: transparent;
   padding: 10px 20px;
   font-size: 20px;
+}
+header .content button:hover {
+  background-color: #2c2c2c;
+  color: white;
+  transition: ease-in-out 0.3s;
 }
 
 #game-board {
@@ -57,4 +74,8 @@ header .content button {
   display: grid;
   grid-template-columns: repeat(8, 0.5fr);
   grid-auto-rows: minmax(100px, auto);
+}
+
+.return {
+  opacity: 0;
 }/*# sourceMappingURL=style.css.map */

@@ -112,4 +112,16 @@ function resetGame () {
     }
 }
 
+const cartes = document.querySelectorAll(".card");
 
+cartes.forEach((card) => {
+  const cover = document.createElement("div");
+  cover.classList.add("cover");
+  card.appendChild(cover);
+});
+
+cartes.forEach((card) => {
+  card.addEventListener("click", () => {
+    card.querySelector(".cover").classList.toggle("return")
+  });
+});
