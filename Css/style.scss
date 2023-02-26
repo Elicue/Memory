@@ -1,12 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
 .card {
-  width: 100px;
-  height: 100px;
+  width: 20vh;
+  height: 30vh;
   background-color: #ccc;
   margin: 5px;
   display: inline-block;
   cursor: pointer;
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 .hidden {
   display: none;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 2px solid black;
+  margin-bottom: 5px;
+  width: 100%;
+
+  .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin: auto;
+    font-size: 20px;
+
+    button {
+      border: 2px black solid;
+      background: transparent;
+      padding: 10px 20px;
+      font-size: 20px;
+    }
+  }
+}
+
+#game-board {
+  width: 94%;
+  margin: auto;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(8, 0.5fr);
+  grid-auto-rows: minmax(100px, auto);
 }
