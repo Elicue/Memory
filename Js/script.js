@@ -12,7 +12,7 @@ let secondCard = null;
 let flippedCards = 0;
 
 // Définir les noms d'images
-const imageNames = ["Assets/Aviron-100.jpeg", "carte_kryptosphere.jpeg", "Assets/carte_leoindiegames.jpeg", "Assets/carte_leolearning.jpeg" ,"Assets/carte_poletech.jpeg", "Assets/DevinciJunior.jpeg", "Assets/LDV_Esport.jpeg", "Assets/LeoCook.jpeg", "Assets/LeoFive.jpeg", "Assets/LeoKing'sWalker.jpeg", "Assets/LeoRacingTeam.jpeg", "Assets/Vegas.jpeg"];
+const imageNames = ["Assets/Aviron-100.jpeg", "Assets/carte_leoindiegames.jpeg", "Assets/carte_leolearning.jpeg" ,"Assets/Krypto.jpeg", "Assets/DevinciJunior.jpeg", "Assets/LDV_Esport.jpeg", "Assets/LeoCook.jpeg", "Assets/LeoFive.jpeg", "Assets/LeoKing'sWalker.jpeg", "Assets/LeoRacingTeam.jpeg", "Assets/Vegas.jpeg" ,"Assets/LeoTactical.jpeg" ,"Assets/Eagles-100.jpg"];
 // Créer les paires d'images
 const imagePairs = [];
 
